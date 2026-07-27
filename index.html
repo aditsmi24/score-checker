@@ -8,8 +8,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://accounts.google.com/gsi/client" async></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
+  <section class="login-screen" id="login-screen" aria-labelledby="login-title">
+    <div class="login-card">
+      <span class="seal" aria-hidden="true"><span>&#10022;</span></span>
+      <h1 id="login-title">SCORE CHECKER</h1>
+      <p>Sign in with your IITM Google account to view your scores.</p>
+      <div id="google-signin-button"></div>
+      <p class="login-error" id="login-error" role="alert"></p>
+    </div>
+  </section>
+
+  <div id="score-app" hidden>
   <header class="topbar">
     <a class="brand" href="#" aria-label="Score Checker home">
       <span class="seal" aria-hidden="true"><span>&#10022;</span></span>
@@ -17,7 +30,7 @@
     </a>
     <nav aria-label="Main navigation">
       <a href="#"><span class="home-icon" aria-hidden="true">&#8962;</span> Home</a>
-      <a href="#"><span aria-hidden="true">&#8618;</span> Logout</a>
+      <button class="logout-button" type="button" id="logout-button"><span aria-hidden="true">&#8618;</span> Logout</button>
     </nav>
   </header>
 
@@ -60,5 +73,6 @@
       </table>
     </section>
   </main>
+  </div>
 </body>
 </html>
