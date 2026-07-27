@@ -76,18 +76,9 @@ body {
 
 .brand { gap: 22px; font-size: 24px; font-weight: 800; }
 
-.seal {
-  width: 62px;
-  height: 62px;
-  display: grid;
-  place-items: center;
-  border: 3px solid #d8b96d;
-  border-radius: 50%;
-  color: #f5d17d;
-  background: #7b221e;
-  box-shadow: inset 0 0 0 4px #f4e2b1;
-  font-size: 25px;
-}
+.iitm-logo { display: block; object-fit: contain; }
+.header-logo { width: 62px; height: 62px; }
+.login-logo { width: 100px; height: 100px; }
 
 nav { display: flex; gap: 40px; font-size: 18px; font-weight: 600; }
 nav a { gap: 6px; }
@@ -126,7 +117,7 @@ tbody tr:nth-child(even) { background: var(--row-even); }
 @media (max-width: 750px) {
   .topbar { height: auto; min-height: 76px; padding: 12px 20px; gap: 16px; }
   .brand { gap: 10px; font-size: 17px; }
-  .seal { width: 45px; height: 45px; font-size: 18px; }
+  .header-logo { width: 45px; height: 45px; }
   nav { gap: 15px; font-size: 15px; }
   .home-icon { font-size: 22px; }
   main { width: calc(100% - 32px); margin: 24px auto; }
